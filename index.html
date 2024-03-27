@@ -52,24 +52,18 @@
         <p>If you are not redirected automatically, please click <a href="https://adsmaster721.github.io/pentest2/">here</a>.</p>
     </div>
     <script>
-        // Lấy phần tử có class là "countdown"
         var countdownElement = document.querySelector('.countdown');
 
         // Thiết lập thời gian ban đầu
-        var timeLeft = 5;
 
-        // Cập nhật số đếm ngược mỗi giây
         var countdownInterval = setInterval(function() {
-            // Giảm thời gian còn lại
             timeLeft--;
 
-            // Cập nhật giá trị của phần tử countdown
             countdownElement.textContent = timeLeft;
 
-            // Nếu đếm ngược đã đạt đến 0, dừng interval và chuyển hướng
             if (timeLeft <= 0) {
                 clearInterval(countdownInterval);
-                window.location.href = 'https://adsmaster721.github.io/pentest2/';
+                window.location.href = 'https://google.com';
             }
         }, 1000); // 1000 milliseconds = 1 giây
     </script>
